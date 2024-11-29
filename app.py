@@ -11,6 +11,10 @@ router = APIRouter()
 @router.get("/user")
 def get_user():
     return {"Name": "Long"}
+
+@router.get("/add_user")
+def add_user():
+    return {"Name": "Long"}
    
 app.include_router(router)
 app.add_middleware(
